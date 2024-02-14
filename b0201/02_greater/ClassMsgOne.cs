@@ -1,7 +1,10 @@
-public class ClassMsg
+namespace St
 {
-    public void Hi() 
+    public class ClassMsg
     {
-        Console.WriteLine("Hello, from ClassMsg!");
+        public void Hi() 
+        {
+            Console.WriteLine("Hello, from ClassMsg!");
+        }
     }
 }

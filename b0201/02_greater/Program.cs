@@ -8,10 +8,16 @@ internal class Program
         string? name = Console.ReadLine();
         Console.WriteLine($"Hello, World! {name}");
         
-        ClassMsg mc = new ClassMsg();
+        St.ClassMsg mc = new St.ClassMsg();
         mc.Hi();
-        
 
+        double? x = 5;
+        Values(x);
+    }
+
+    public static void Values(double? v)
+    {
+        Console.WriteLine(v.Value);
     }
 }
 

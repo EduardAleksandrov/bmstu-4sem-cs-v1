@@ -17,7 +17,8 @@ internal class Program
 
     public static void Values(double? v)
     {
-        Console.WriteLine(v.Value);
+        if(v == null) Console.WriteLine(v);
+        else Console.WriteLine(v.Value);
     }
 }
 

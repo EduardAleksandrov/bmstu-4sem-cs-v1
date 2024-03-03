@@ -15,6 +15,9 @@ internal class Program
 
             double? x = 5;
             Values(x);
+
+            double i = (double) Math.Sqrt(16.5);
+            Console.WriteLine(i.GetType() == typeof(double));
         }
         
     }

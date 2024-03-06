@@ -26,9 +26,15 @@ internal class Program
 
             double i = (double) Math.Sqrt(16.5);
             Console.WriteLine(i.GetType() == typeof(double));
+            
             string? str= System.Environment.GetEnvironmentVariable("HELLO");
-
             Console.WriteLine(str);
+
+            int obji = 5;
+            Console.WriteLine(obji.ToString()); //объект в стеке
+            Object obj2 = obji;
+            Console.WriteLine(obj2.ToString()); //объект в куче
+
         }
         
     }

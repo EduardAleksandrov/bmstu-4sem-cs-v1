@@ -1,4 +1,12 @@
 ﻿using System;
+
+/*
+    .env
+    export HELLO=554hi
+    $source .env
+    $echo $HELLO
+    $dotnet run
+*/
     
 internal class Program
 {
@@ -18,6 +26,9 @@ internal class Program
 
             double i = (double) Math.Sqrt(16.5);
             Console.WriteLine(i.GetType() == typeof(double));
+            string? str= System.Environment.GetEnvironmentVariable("HELLO");
+
+            Console.WriteLine(str);
         }
         
     }

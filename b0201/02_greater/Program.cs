@@ -35,6 +35,10 @@ internal class Program
             Object obj2 = obji;
             Console.WriteLine(obj2.ToString()); //объект в куче
 
+            IMovable tom = new Person();
+            Car tesla = new Car(); // аналогично для IMovable tesla = new Car();
+            tom.Move();     // Walking
+            tesla.Move();   // Driving
         }
         
     }
@@ -44,5 +48,15 @@ internal class Program
         if(v == null) Console.WriteLine(v);
         else Console.WriteLine(v.Value);
     }
+}
+
+interface IMovable
+{
+    void Move() => Console.WriteLine("Walking");
+}
+class Person : IMovable { }
+class Car : IMovable
+{
+    public void Move() => Console.WriteLine("Driving");
 }
 

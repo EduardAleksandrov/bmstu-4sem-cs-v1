@@ -4,4 +4,4 @@
 
 # Язык программирования C#
 
-> BMSTU IU7 4 semester 2023
+> BMSTU IU7 4 semester 2024
